@@ -11,7 +11,7 @@ set /p DURATION_MIN=Duracion de la grabacion (en minutos):
 set /p OUTPUT_NAME=Nombre del archivo de salida (sin extension): 
 
 set OUTPUT_DIR=%cd%
-set OUTPUT_FILE=%OUTPUT_DIR%\%OUTPUT_NAME%.mp4
+set OUTPUT_FILE=%OUTPUT_DIR%\%OUTPUT_NAME%.ts
 set /a DURATION_SEC=%DURATION_MIN%*60
 
 set RECORD_SCRIPT=%OUTPUT_DIR%\_record_temp.bat
@@ -38,3 +38,4 @@ echo ================================
 echo.
 
 pause
+
